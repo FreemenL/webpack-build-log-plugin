@@ -1,6 +1,6 @@
 {
   "name": "webpack-build-log-plugin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "friendly display compilation details",
   "main": "index.js",
   "scripts": {

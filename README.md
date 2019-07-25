@@ -33,11 +33,11 @@ The plugin will friendly display compilation details
 
 **webpack.config.prod.js**
 ```javascript
-const emptyWebpackBuildDetailPlugin = require("webpack-build-log-plugin");
+const webpackBuildLogPlugin = require("webpack-build-log-plugin");
 
 module.exports = {
     plugins: [
-        new emptyWebpackBuildDetailPlugin(options)
+        new webpackBuildLogPlugin(options)
     ]
 }
 
@@ -68,7 +68,7 @@ Here's an example webpack config illustrating how to use these options
     filename: 'index_bundle.js'
   },
   plugins: [
-    new emptyWebpackBuildDetailPlugin({
+    new webpackBuildLogPlugin({
       path: path.join(process.cwd(),'log'),
       filename: 'compile-log.md',
       deleteFile: process.env.NODE_ENV=="production"
