@@ -70,7 +70,8 @@ Here's an example webpack config illustrating how to use these options
   plugins: [
     new emptyWebpackBuildDetailPlugin({
       path: path.join(process.cwd(),'log'),
-      filename: 'compile-log.md'
+      filename: 'compile-log.md',
+      deleteFile: process.env.NODE_ENV=="production"
     })
   ]
 }
