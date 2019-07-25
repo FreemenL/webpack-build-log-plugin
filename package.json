@@ -1,0 +1,38 @@
+{
+  "name": "webpack-build-log-plugin",
+  "version": "1.0.1",
+  "description": "friendly display compilation details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreemenL/webpack-build-log-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin"
+  ],
+  "author": "freemenL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreemenL/webpack-build-log-plugin/issues"
+  },
+  "homepage": "https://github.com/FreemenL/webpack-build-log-plugin#readme",
+  "dependencies": {
+    "boxen": "^4.1.0",
+    "chalk": "^2.4.2",
+    "filesize": "^4.1.2",
+    "format-json": "^1.0.3",
+    "fs-extra": "^8.1.0",
+    "gzip-size": "^5.1.1",
+    "recursive-readdir": "^2.2.2",
+    "strip-ansi": "^5.2.0",
+    "tapable": "^1.1.3"
+  }
+}
