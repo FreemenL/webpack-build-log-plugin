@@ -3,29 +3,29 @@
     <img width="200" height="200"
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
-  <h1>empty-webpack-build-detail-plugin</h1>
+  <h1>webpack-build-log-plugin</h1>
   <p>friendly display compilation details</p>
 </div>
 
 <h2 align="center">Install</h2>
 
 ```bash
-  cnpm install empty-webpack-build-detail-plugin -D
+  cnpm install webpack-build-log-plugin -D
 ```
 
 ```bash
-  npm i empty-webpack-build-detail-plugin -D
+  npm i webpack-build-log-plugin -D
 ```
 
 ```bash
-  yarn add --dev empty-webpack-build-detail-plugin
+  yarn add --dev webpack-build-log-plugin
 ```
 
 This is a [webpack](http://webpack.js.org/) plugin tailored for [emptyd-desgin](https://github.com/FreemenL/emptyd-admin-webpack) and can be used in your project. No difference
 
 <h2 align="center">Zero Config</h2>
 
-The `empty-webpack-build-detail-plugin` works without configuration.  
+The `webpack-build-log-plugin` works without configuration.  
 
 <h2 align="center">Usage</h2>
 
@@ -33,7 +33,7 @@ The plugin will friendly display compilation details
 
 **webpack.config.prod.js**
 ```javascript
-const emptyWebpackBuildDetailPlugin = require("empty-webpack-build-detail-plugin");
+const emptyWebpackBuildDetailPlugin = require("webpack-build-log-plugin");
 
 module.exports = {
     plugins: [
@@ -45,7 +45,7 @@ module.exports = {
 
 <h2 align="center">Options</h2>
 
-You can pass a hash of configuration options to `empty-webpack-build-detail-plugin`.
+You can pass a hash of configuration options to `webpack-build-log-plugin`.
 Allowed values are as follows
 
 |Name|Type|Default|Description|
