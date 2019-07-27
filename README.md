@@ -4,7 +4,9 @@
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
   <h1>webpack-build-log-plugin</h1>
-  <p>friendly display compilation details</p>
+  <p>This will help you quickly locate and solve problems</p>
+  <p>Display compilation details in production environment friendly</p>
+  <p>You can use it in any project that has been built by <strong>webpack</strong>, such as: <strong>vue-cli</strong>, <strong>create-react-app</strong>, or your custom project</p>
 </div>
 
 <h2 align="center">Install</h2>

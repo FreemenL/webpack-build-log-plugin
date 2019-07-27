@@ -264,7 +264,7 @@ class webpackBuildLogPlugin{
 				   chalk.yellow('The bundle size is significantly larger than recommended.')
 				);
       }
-      callback()
+      callback(process.exit(0));
 		}
 }
 
