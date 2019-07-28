@@ -35,11 +35,11 @@ The plugin will friendly display compilation details
 
 **webpack.config.prod.js**
 ```javascript
-const webpackBuildLogPlugin = require("webpack-build-log-plugin");
+const WebpackBuildLogPlugin = require("webpack-build-log-plugin");
 
 module.exports = {
     plugins: [
-        new webpackBuildLogPlugin(options)
+        new WebpackBuildLogPlugin(options)
     ]
 }
 
