@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.38.0",
-  "hash": "b2fa58e688f8e8ba4343",
-  "time": 108,
-  "builtAt": 1564337332902,
+  "hash": "035e787f16d65fc3cc4c",
+  "time": 32,
+  "builtAt": 1564406930929,
   "publicPath": "",
   "outputPath": "/Users/jiayali/Desktop/webpack-plugin/webpack-build-log-plugin/dist/basic-spec",
   "assetsByChunkName": {
@@ -54,14 +54,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 56,
+      "size": 62,
       "names": [
         "main"
       ],
       "files": [
         "index_bundle.js"
       ],
-      "hash": "50e7fc1789456a8db920",
+      "hash": "bc6947c0a6ba76bf67b0",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -73,7 +73,7 @@
           "name": "./__tests__/fixtures/index.js",
           "index": 0,
           "index2": 0,
-          "size": 56,
+          "size": 62,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -106,7 +106,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "function testPlugin () {\n  console.log('testplugin');\n}\n"
+          "source": "function shouldComponetupdate(){\n  console.log('render :');\n}\n"
         }
       ],
       "filteredModules": 0,
@@ -129,7 +129,7 @@
       "name": "./__tests__/fixtures/index.js",
       "index": 0,
       "index2": 0,
-      "size": 56,
+      "size": 62,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -162,7 +162,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 0,
-      "source": "function testPlugin () {\n  console.log('testplugin');\n}\n"
+      "source": "function shouldComponetupdate(){\n  console.log('render :');\n}\n"
     }
   ],
   "filteredModules": 0,

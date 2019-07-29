@@ -1,6 +1,6 @@
 {
   "name": "webpack-build-log-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "friendly display compilation details",
   "main": "src/index.js",
   "scripts": {
@@ -22,7 +22,8 @@
       "/node_modules/",
       "<rootDir>/__tests__/fixtures/"
     ],
-    "collectCoverage": true
+    "collectCoverage": true,
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,6 @@
     "format-json": "^1.0.3",
     "fs-extra": "^8.1.0",
     "gzip-size": "^5.1.1",
-    "recursive-readdir": "^2.2.2",
     "strip-ansi": "^5.2.0",
     "tapable": "^1.1.3"
   },

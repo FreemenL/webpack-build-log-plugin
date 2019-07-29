@@ -16,9 +16,14 @@ const setProperty = (object, property, value) => {
   Object.defineProperty(object, property, { value })
   return originalProperty
 }
-
 const mockExit = jest.fn()
-setProperty(process, 'exit', mockExit)
+setProperty(process, 'exit', mockExit);
+
+jest.setTimeout(30000);
+process.on('unhandledRejection', r => console.log(r));
+process.traceDeprecation = true;
+
+//公共测试函数
 function testwebpackBuildLogPlugin (webpackConfig, done) {
   
   webpack(webpackConfig, (err, stats) => {
@@ -39,6 +44,23 @@ describe('WebpackBuildLogPlugin', () => {
   test('utils', () => {
     expect(utils.getIp()).toMatch(/^(([a-zA-Z0-9_-])+(\.)?)*(:\d+)?(\/((\.)?(\?)?=?&?[a-zA-Z0-9_-](\?)?)*)*$/i);
   })
+
+  it('Test file size out of range', done => {
+    testwebpackBuildLogPlugin({
+      mode: 'production',
+      entry: path.join(__dirname, 'fixtures/testMax.js'),
+      output: {
+        path: OUTPUT_DIR,
+        filename: 'index_bundle.js'
+      },
+      plugins: [
+        new WebpackBuildLogPlugin({
+          path: path.join(process.cwd(), 'log'),
+          filename,
+          deleteFile: true
+        })]
+    }, done);
+  });
 
   it('Test log file exists', done => {
     testwebpackBuildLogPlugin({

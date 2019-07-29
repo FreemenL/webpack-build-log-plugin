@@ -7,7 +7,6 @@ const json = require('format-json');
 const filesize = require('filesize');
 const stripAnsi = require('strip-ansi');
 const { SyncHook } = require('tapable');
-const recursive = require('recursive-readdir');
 const gzipSize = require('gzip-size').sync;
 const { getIp } = require('./utils');
 // These sizes are pretty large. We'll warn for bundles exceeding them.
@@ -106,20 +105,9 @@ class WebpackBuildLogPlugin {
   // 测量文件大小
   measureFileSizesBeforeBuild (buildFolder) {
     return new Promise(resolve => {
-      recursive(buildFolder, (err, fileNames) => {
-        var sizes;
-        if (!err && fileNames) {
-          sizes = fileNames.filter(this.canReadAsset).reduce((memo, fileName) => {
-            var contents = fs.readFileSync(fileName);
-            var key = this.removeFileNameHash(buildFolder, fileName);
-            memo[key] = gzipSize(contents);
-            return memo;
-          }, {});
-        }
-        resolve({
-          root: buildFolder,
-          sizes: sizes || {}
-        });
+      resolve({
+        root: buildFolder,
+        sizes: {}
       });
     });
   }
@@ -255,7 +243,6 @@ class WebpackBuildLogPlugin {
       ) + `\n\n` + logLine)
     );
     if (suggestBundleSplitting) {
-      console.log();
       console.log(
         chalk.yellow('The bundle size is significantly larger than recommended.')
       );

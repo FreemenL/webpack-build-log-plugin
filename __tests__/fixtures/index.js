@@ -1,3 +1,3 @@
-function testPlugin () {
-  console.log('testplugin');
+function shouldComponetupdate(){
+  console.log('render :');
 }

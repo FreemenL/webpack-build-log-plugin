@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function testPlugin () {\n  console.log('testplugin');\n}\n\n\n//# sourceURL=webpack:///./__tests__/fixtures/index.js?");
+eval("function shouldComponetupdate(){\n  console.log('render :');\n}\n\n\n//# sourceURL=webpack:///./__tests__/fixtures/index.js?");
 
 /***/ })
 
