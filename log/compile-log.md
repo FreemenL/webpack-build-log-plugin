@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.38.0",
   "hash": "035e787f16d65fc3cc4c",
-  "time": 32,
-  "builtAt": 1564406930929,
+  "time": 36,
+  "builtAt": 1564407278703,
   "publicPath": "",
   "outputPath": "/Users/jiayali/Desktop/webpack-plugin/webpack-build-log-plugin/dist/basic-spec",
   "assetsByChunkName": {

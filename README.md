@@ -8,7 +8,9 @@
   <p>Display compilation details in production environment friendly</p>
   <p>You can use it in any project that has been built by <strong>webpack</strong>, such as: <strong>vue-cli</strong>, <strong>create-react-app</strong>, or your custom project</p>
 </div>
-
+<h2 align="center">Note</h2>
+Compile logs will only be output in the production environment.
+And you need to set <strong>process.env.NODE_ENV</strong> in different environments.
 <h2 align="center">Install</h2>
 
 ```bash
@@ -73,6 +75,8 @@ Here's an example webpack config illustrating how to use these options
     new webpackBuildLogPlugin({
       path: path.join(process.cwd(),'log'),
       filename: 'compile-log.md',
+      // Note: Compile logs will only be output in the production environment.
+      //And you need to set process.env.NODE_ENV in different environments.
       deleteFile: process.env.NODE_ENV=="production"
     })
   ]
