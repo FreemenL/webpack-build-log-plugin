@@ -97,3 +97,7 @@ Here's an example webpack config illustrating how to use these options
     </tr>
   <tbody>
 </table>
+
+<h2 align="center">欢迎加wx群学习交流</h2>
+
+<img src="https://raw.githubusercontent.com/FreemenL/first-github-pages/master/public/WechatIMG138.jpeg"/>
