@@ -44,7 +44,7 @@
     "chalk": "^2.4.2",
     "filesize": "^4.1.2",
     "format-json": "^1.0.3",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "gzip-size": "^5.1.1",
     "strip-ansi": "^5.2.0",
     "tapable": "^1.1.3"
